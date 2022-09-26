@@ -14,7 +14,7 @@ public class SimpleMenu {
         boolean isContinuing = true;
         while (isContinuing) {
             System.out.println("=========MENU========\n0. Exit!!!\n1. Add number into ArrayList\n2. Print number\n" +
-                    "3. Get maximum number\n4. Get minimum number");
+                    "3. Get maximum number\n4. Get minimum number\n5. Search number");
             System.out.print("Please input option: ");
             Scanner scanner = new Scanner(System.in);
             int option = scanner.nextInt();
@@ -54,8 +54,20 @@ public class SimpleMenu {
                     }
                 }
                 System.out.println(min);
+            } else if (option == 5) {
+                System.out.print("Input the number to search: ");
+                int numberSearch = scanner.nextInt();
+                boolean isCheck = false;
+                for (int i = 0; i < myArrayList.size(); i++) {
+                    if (numberSearch == myArrayList.get(i)) {
+                        System.out.println("===> Number to find at Index: " + i);
+                        isCheck = true;
+                    }
+                }
+                if (!isCheck) {
+                    System.out.println("===>That number doesn't exist!!!");
+                }
             }
         }
-
     }
 }
