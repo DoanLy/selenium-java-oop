@@ -9,7 +9,7 @@ public class SuaBaiMenu {
         List<Integer> myArrayList = new ArrayList<>();
         boolean isContinuing = true;
         while (isContinuing) {
-            printGamenu();
+            printGameMenu();
             int userOption = getUerOption();
 
             switch (userOption) {
@@ -43,7 +43,7 @@ public class SuaBaiMenu {
         }
     }
 
-    private static void printGamenu() {
+    private static void printGameMenu() {
         System.out.println("=========MENU========\n0. Exit!!!\n1. Add number into ArrayList\n2. Print number\n" +
                 "3. Get maximum number\n4. Get minimum number\n5. Search number\n6. Reset the list");
     }
