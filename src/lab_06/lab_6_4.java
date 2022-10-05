@@ -27,7 +27,6 @@ public class lab_6_4 {
                 domain += character;
             }
         }
-
         System.out.println("HTTP is: " + http);
         System.out.println("Domain is: " + domain);
     }

@@ -8,7 +8,7 @@ public class SimpleMenu {
     public static void main(String[] args) {
         List<Integer> myArrayList = new ArrayList<>();
         myArrayList.add(2);
-        myArrayList.add(7);
+        myArrayList.add(2);
         myArrayList.add(11);
         myArrayList.add(3);
         boolean isContinuing = true;
